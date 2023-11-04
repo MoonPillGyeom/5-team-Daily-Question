@@ -81,6 +81,29 @@ object의 propertyname을 만들때 기본적으로 ''붙이지 않는데요 하
 //특수문자가 들어갈 때
 
 
+---------------------11 / 4 pillGyeom----------------------------------
 
+
+문자열과 배열을 출력했을때 나오는 값.
+
+let moon = "pilgyeom";
+moon[0] = 'f';
+console.log(moon);
+
+let mon = ['p', 'i', 'l', 'l', 'g', 'y', 'e', 'o', 'm'];
+mon[0] = 'f';
+console.log(mon);
+
+
+1. console.log(moon); = 
+
+2. console.log(mon); = 
+
+
+문자열에서 indexOf로 없는 문자열을 출력하면?? 
+
+ex) let moon = pillgyeom
+
+console.log(moon.indexOf('a')) = 
 
 
