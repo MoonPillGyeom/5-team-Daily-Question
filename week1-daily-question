@@ -102,7 +102,7 @@ console.log(mon);
 
 문자열에서 indexOf로 없는 문자열을 출력하면?? 
 
-ex) let moon = pillgyeom
+ex) let moon = 'pillgyeom'
 
 console.log(moon.indexOf('a')) = 
 
