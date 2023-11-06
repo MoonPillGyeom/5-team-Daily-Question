@@ -1,2 +1,8 @@
 padding
 margine에 대해 적어주세요.
+
+// padding은 박스를 예를들어 안쪽 여백을조절
+//margin은 박스 외곽의 여백을 조절
+
+
+
