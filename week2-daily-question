@@ -1,2 +1,5 @@
 padding
 margine에 대해 적어주세요.
+
+2023-11-06 재환
+여백에 대한 개념 border을 기준으로 padding border 안쪽의 여백을 margin은 border 외부에 여백을 나타냅니다.
