@@ -1,5 +1,12 @@
 padding
 margine에 대해 적어주세요.
 
+각 속성 적용시, 적용되 순서도 같이 적어주세요.
+
 2023-11-06 재환
 여백에 대한 개념 border을 기준으로 padding border 안쪽의 여백을 margin은 border 외부에 여백을 나타냅니다.
+
+ex) padding(margin) = 23px; 12시 3시 6시 9시 모두 23px 값 적용
+    padding(margin) = 23px 11px; 12시 6시 값 23px  3시 9시 11px 적용 
+    padding(margin) = 23px 11px  45px; 12시 23px 3시 9시 11px 6시 45px;
+    padding(margin) = 12px 23px 34px 56px ; 12시 12px , 3시 23px , 6시 34px, 9시 56px;
