@@ -1,12 +1,9 @@
 padding
 margine에 대해 적어주세요.
-<<<<<<< HEAD
 
 // padding은 박스를 예를들어 안쪽 여백을조절
 //margin은 박스 외곽의 여백을 조절
 
-
-
-=======
 각 속성 적용시, 적용되 순서도 같이 적어주세요.
->>>>>>> main
+top - right - bottom - left
+
