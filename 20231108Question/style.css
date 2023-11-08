@@ -1,0 +1,11 @@
+.line{text-decoration: underline;}
+
+.color{color: blueviolet;}
+
+.pointer{cursor: pointer;}
+
+.font{
+  font-size: 30px;
+  font-style: italic;
+  color: brown;
+}
