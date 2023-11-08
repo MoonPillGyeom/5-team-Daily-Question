@@ -15,12 +15,15 @@ margin: border 바깥쪽 영역, 좌우 영역을 auto 처리 할 수 있음
 2023-11-08 재환
 
 1. document.querySelector('[XX..]')의 형식이 있습니다 여기서 []대괄호의 의미는 무엇일까요?
-
+css선택자를 의미합니다.
 
 
 2. Event Handler 와 Event Handling 에 말하시오 
-
+Event Handler: 이벤트가 발생했을 때 일어나야하는 구체적인 동작들을 표현한 코드로 이벤트 리스너(Event Listener)라고도 부름
+Event Handling: 이벤트가 발생했을 때 어떤 특별한 동작을 하도록 자바스크립트를 통해 이벤트를 다루는 것
 
 
 3. 요소에 클래스를 부여하는 방법에 대해 말씀해주세요 2가지를 배웠는데 각각의 특징도 간단하게 말해주세요
-
+1) setAttribute 메소드 이용
+2) className 프로퍼티 이용: 클래스 속성값 전체가 바뀐다는 단점이 있음
+3) classList 프로퍼티 이용: 클래스의 속성 값을 유사 배열로 다루는 프로퍼티
