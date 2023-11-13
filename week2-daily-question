@@ -1,3 +1,53 @@
 padding
 margine에 대해 적어주세요.
+
+padding : border 안쪽 영역
+margin: border 바깥쪽 영역, 좌우 영역을 auto 처리 할 수 있음
+
 각 속성 적용시, 적용되 순서도 같이 적어주세요.
+1개: 위,우,아래,좌 모두 적용 됨
+2개: 첫번째 값은 위, 아래 / 두번째 값은 좌, 우에 적용됨
+3개: 첫번째 값은 위 / 두번째 값은 좌, 우에 적용됨 / 세번째 값은 아래에 적용됨
+4개: 첫번째 값은 위 / 두번째 값은 우 / 세번째 값은 아래 / 네번째 값은 좌에 적용됨
+
+
+
+2023-11-08 재환
+
+1. document.querySelector('[XX..]')의 형식이 있습니다 여기서 []대괄호의 의미는 무엇일까요?
+css선택자를 의미합니다.
+
+
+2. Event Handler 와 Event Handling 에 말하시오 
+Event Handler: 이벤트가 발생했을 때 일어나야하는 구체적인 동작들을 표현한 코드로 이벤트 리스너(Event Listener)라고도 부름
+Event Handling: 이벤트가 발생했을 때 어떤 특별한 동작을 하도록 자바스크립트를 통해 이벤트를 다루는 것
+
+
+3. 요소에 클래스를 부여하는 방법에 대해 말씀해주세요 2가지를 배웠는데 각각의 특징도 간단하게 말해주세요
+1) setAttribute 메소드 이용
+2) className 프로퍼티 이용: 클래스 속성값 전체가 바뀐다는 단점이 있음
+3) classList 프로퍼티 이용: 클래스의 속성 값을 유사 배열로 다루는 프로퍼티
+
+2023-11-09 하은
+
+1. 마우스 이동 이벤트에는 mouseover, mouseout, mouseenter, mouseleave type이 존재하는데 mouseenter, mouseleave와 mouseover, mouseout의 차이점 두 가지를 적어주세요.
+
+  버블링이 일어나지 않는다.
+  mouseover/mouseout 일때는 버블링과 이벤트 위임으로 자식요소로 이동할때 빠져나올때 이벤트가 발생합니다
+  mouseenter/mouseleave는 버블링과 이벤트 위임이 발생하지 않아 자식요소에서 마우스를 이동 빠져나올때 이벤트가 발생하지않습니다.
+  
+  영역구분에대한 자식요소를 계산하지않는다.
+
+  <div id="box1">
+    <div idv="box2"></div>
+  </div>
+   mouseover/mouseout 일때는 box1, box2 마우스 이벤트가 모두 동작을함 개별의 영역,
+   mouseenter/mouseleave 일때는 자식요소 영역을 구분하지 않고 box2요소가 없다고 치고 box1의 영역으로 해버리는 것 같습니다.??
+
+
+2. input 변수는 아이디가 input인 <input>태그를 가리키고 있습니다. 
+이 때 word 변수에서 특정 노드를 선택하고 싶은데, 이 노드는 비표준 속성인 data-word의 속성값이 input의 입력값과 동일합니다.
+이 노드를 선택하기 위해서 ***에 들어가야할 코드를 작성해 주세요.
+
+const input = document.querySelector('#input');
+const word = document.querySelector(`[data-word = "${input.Value}"]`);
