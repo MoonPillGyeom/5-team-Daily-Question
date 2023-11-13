@@ -1,0 +1,11 @@
+--------------11/13 pillGyeom-------------
+1. 콜백함수란?
+
+2. Arrow Function 을 기본함수로 바꿔 주세요.
+const numbers = [1, 10, 4, 21, 36000];
+
+numbers.sort((a, b) => a - b);
+console.log(numbers); == 값도 적어주세요.
+
+numbers.sort((a, b) => b - a);
+console.log(numbers);  == 값도 적어주세요.
