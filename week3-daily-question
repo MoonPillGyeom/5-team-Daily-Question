@@ -1,5 +1,6 @@
 --------------11/13 pillGyeom-------------
 1. 콜백함수란?
+다른 함수의 파라미터에 전달되는 함수
 
 2. Arrow Function 을 기본함수로 바꿔 주세요.
 const numbers = [1, 10, 4, 21, 36000];
@@ -9,3 +10,7 @@ console.log(numbers); == 값도 적어주세요.
 
 numbers.sort((a, b) => b - a);
 console.log(numbers);  == 값도 적어주세요.
+
+numbers.sort(function (a, b) { return (a - b) });
+[1, 4, 10, 21, 36000]
+[36000, 21, 10, 4, 1]
