@@ -1,11 +1,33 @@
 --------------11/13 pillGyeom-------------
 1. 콜백함수란?
-
+  다른함수에의해 호출되는 함수 함수 내에서 함수를 호출
 2. Arrow Function 을 기본함수로 바꿔 주세요.
 const numbers = [1, 10, 4, 21, 36000];
 
+(1)
 numbers.sort((a, b) => a - b);
 console.log(numbers); == 값도 적어주세요.
 
+--------------------------------
+답안
+numbers.sort(function(a, b) {
+  return a - b;
+});
+
+console.log(numbers);
+결과 오름차순: [1, 4, 10, 21, 36000]
+---------------------------------
+
+(2)
 numbers.sort((a, b) => b - a);
 console.log(numbers);  == 값도 적어주세요.
+
+---------------------------------------
+답안
+numbers.sort(function(a, b) {
+  return b - a;
+});
+
+console.log(numbers);
+결과 내림차순: [36000, 21, 10, 4, 1]
+----------------------------------------
