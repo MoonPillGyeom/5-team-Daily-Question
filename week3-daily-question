@@ -60,12 +60,17 @@ const car = {
 };
 ------------------------------------------------------
 1. 객체object란 무엇인가 설명해주세요 
-
+; 객체란 키와 네임으로 이루어진 프로퍼티의 모음집?
 2. 객체내 X는 Y:Z 의 값 쌍으로 구성이 됩니다 여기서 x와 y와 z를 가리키는 용어는?
-
+; x = 프로퍼티
+; y = 프로퍼티네임
+; z = 프로퍼티벨류
 3.보기중 메서드method는 어떤 부분을 말하고 메서드method란 무엇인지 함께 말해주세요.
-
+;start: function() 에서 function()입니다!
+;drive: function(speed) 에서 function(speed)입니다!
+;메소드는 객체에 속한 함수 입니다!
 4. console.log(x)를 객체와 메소드에 따라 해석해보세요(위의 용어를 조합해서 말씀해주시면됩니다 '.'은 왜쓰는지에대해서도 알려주세요)
+;console.log(x) 는 console의 객체에 log메소드를 활용하여 파라미터 x를 전달한다.
 
 5.
 function add(a, b) {
@@ -74,8 +79,8 @@ function add(a, b) {
 
 const result = add(3, 5);
 
-함수 선언에서 add(a,b) 부분의 a,b를 부르는 용어는?
-함수 호출부분에서의 add(3,5); 에서 3,5 를 부르는 용어는? 
+함수 선언에서 add(a,b) 부분의 a,b를 부르는 용어는? ;파라미터 
+함수 호출부분에서의 add(3,5); 에서 3,5 를 부르는 용어는? ;아규먼트
 
 
 6.
@@ -89,12 +94,14 @@ members.forEach((member,i, arr) => {
 })
 
 (1)i, arr가 의미하는것이 무엇인가요 
-
+; i = 인덱스넘버
+; arr = members 를 가르킴.
 
 (2)forEach 실행중 push로 값도 넣을수 있다고 하네요
 출력결과 눈에 보이는 변화는 없지만 내부 어느 부분이 변했습니다 무엇이 변했을까요? 
+;
 변하는동안 i 는 변하지 않는데 그 이유는 무엇일까요?
-
+;
 
 7. spread구문에 관한 문제입니다
 보기를 보시고 문제점을 파악해서 수정해주세요 latte는 초콜릿이 들어가면 안되요! 
@@ -107,7 +114,7 @@ const latte ={
   milk: '150ml'
 }
 
-const cafeMocha = latte;
+const cafeMocha = {...latte};
 
 cafeMocha.chocolate = '20ml'
 
