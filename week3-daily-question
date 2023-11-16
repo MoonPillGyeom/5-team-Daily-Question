@@ -164,10 +164,12 @@ console.log(cafeMocha);
 끝!
 -------------------------11/16 PillGyeom------------
 Request 의 종류에는 크게 4가지가 있는데 각각의 메서드는 무엇이며 어디에 존재할까요?? 
-1. 데이터 조회 =
-2. 데이터 추가 =
-3. 데이터 수정 =
+1. 데이터 조회 = get header와 body에 따로 추가할 내용없이 url로 요청을 보내면 됨
+
+2. 데이터 추가 = post header에 Contents-type = 'application/json' body에 내용
+
+3. 데이터 수정 = put 수정할 내용을 body에 넣어서 요청을 함 
 3번의 경우 다른 메서드 PATCH도 있는데 3번의 메서드와 PATCH의 차이점은 무엇일까요?
-=
-4. 데이터 삭제 =
+= PATCH는 본인이 수정하고 싶은 부분을 타깃으로 수정이 가능하지만 put은 덮어 씁니다 
+4. 데이터 삭제 = delete body다 필요없고  path를 설정해줘야함 
 >>>>>>> main
